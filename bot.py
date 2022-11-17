@@ -29,6 +29,7 @@ def run_discord_bot():
             user_message = str(message.content)
             channel = str(message.channel)
 
+            # If the user type !yt and a youtube link it will download it
             print(f'{username} in {channel}: {user_message}')
             if user_message[0:3] == '!yt':
                 videoLink = user_message[4:]
